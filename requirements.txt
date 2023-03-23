@@ -1,0 +1,11 @@
+librosa>=0.7.0
+numba
+numpy
+opencv-python==4.1.1.26
+torch>=1.1.0
+torchvision>=0.3.0
+tqdm>=4.45.0
+dlib
+scikit-image
+matplotlib
+h5py
