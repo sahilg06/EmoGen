@@ -3,7 +3,7 @@
 This code is PyTorch implementation of the paper: _Emotionally Enhanced Talking Face Generation_
 
 |📑 Original Paper|📰 Project Page|🌀 Demo|⚡ Live Testing
-|:-:|:-:|:-:|
+|:-:|:-:|:-:|:-:|
 [Paper](https://arxiv.org/abs/2303.11548) | [Project Page](https://midas.iiitd.edu.in/emo/) | [Demo Video](https://youtu.be/AoWDmrMlhQI) | [Interactive Demo](https://midas.iiitd.edu.in/emo/)
 
 Prerequisites
