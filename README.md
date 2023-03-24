@@ -57,6 +57,8 @@ You can also set additional less commonly-used hyper-parameters at the bottom of
 
 Inference
 -------
+Comment these code lines for inference: [line1](https://github.com/sahilg06/EmoGen/blob/7e58e8343dc0faff2685302920750cb8f7227651/models/wav2lip.py#L108) and [line2](https://github.com/sahilg06/EmoGen/blob/7e58e8343dc0faff2685302920750cb8f7227651/models/wav2lip.py#L113). 
+
 ```bash
 python inference.py --checkpoint_path <ckpt> --face <video.mp4> --audio <an-audio-source> --emotion <categorical emotion>
 ```
