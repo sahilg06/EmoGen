@@ -1,6 +1,6 @@
-# Evaluation Framework
+## Evaluation of sync quality
 
-You can calculate the LSE-D and LSE-C scores using the instructions below. Please see [this thread](https://github.com/Rudrabha/Wav2Lip/issues/22#issuecomment-712825380) on how to calculate the FID scores.  
+You can calculate the LSE-D and LSE-C scores using the instructions below. 
 
 ### Steps to set-up the evaluation repository for LSE-D and LSE-C metric:
 We use the pre-trained syncnet model available in this [repository](https://github.com/joonson/syncnet_python). 
@@ -42,17 +42,18 @@ sh calculate_scores_real_videos.sh /path/to/video/data/root
 ```
 * The generated scores will be present in the all_scores.txt generated in the ```syncnet_python/``` folder
 
-# Evaluation of image quality using FID metric.
+## Evaluation of image quality using FID metric.
 We use the [pytorch-fid](https://github.com/mseitzer/pytorch-fid) repository for calculating the FID metrics. We dump all the frames in both ground-truth and generated videos and calculate the FID score. 
+Please see [this thread](https://github.com/Rudrabha/Wav2Lip/issues/22#issuecomment-712825380) on how to calculate the FID scores.  
 
-# Evaluation of emotion incorporation.
+## Evaluation of emotion incorporation.
 We use our emotion discriminator to evaluate the generated emotional talking face videos. Train it as an emotion classifier. The higher the emotion classification accuracy (EmoAcc) of the video-based emotion classifier on the generated videos, the better the emotion incorporation ability of the model. As we are using arbitrary emotions to generate our videos, those arbitrary emotions can be exploited as ground truth labels for the classifier to evaluate our model.
 
 
-# Opening issues related to evaluation scripts
+## Opening issues related to evaluation scripts
 * Please open the issues with the "Evaluation" label if you face any issues in the evaluation scripts. 
 
-# Acknowledgements
+## Acknowledgements
 Our evaluation pipeline in based on two existing repositories. LSE metrics are based on the [syncnet_python](https://github.com/joonson/syncnet_python) repository and the FID score is based on [pytorch-fid](https://github.com/mseitzer/pytorch-fid) repository. We thank the authors of both the repositories for releasing their wonderful code.
 
 
