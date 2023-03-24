@@ -20,6 +20,22 @@ Prerequisites
 - Install necessary packages using `pip install -r requirements.txt`.
 - Face detection [pre-trained model](https://www.adrianbulat.com/downloads/python-fan/s3fd-619a316812.pth) should be downloaded to `face_detection/detection/sfd/s3fd.pth`. Alternative [link](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/prajwal_k_research_iiit_ac_in/EZsy6qWuivtDnANIG73iHjIBjMSoojcIV0NULXV-yiuiIg?e=qTasa8) if the above does not work.
 
+Preparing the CREMA-D dataset for training
+----------
+
+##### Download data
+Download the data from this [repo](https://github.com/CheyneyComputerScience/CREMA-D).
+
+##### Convert videos to 25 fps
+```bash
+python convertFPS.py -i <raw_video_folder> -o <folder_to_save_25fps_videos>
+```
+
+##### Preprocess the dataset
+```bash
+python preprocess_crema-d.py --data_root <folder_of_25fps_videos> --preprocessed_root preprocessed_dataset/
+```
+
 Train!
 ----------
 There are three major steps: (i) Train the expert lip-sync discriminator, (ii) Train the emotion discriminator (iii) Train the EmoGen model.
@@ -66,4 +82,4 @@ Theis repository can only be used for personal/research/non-commercial purposes.
 
 Acknowledgements
 ----------
-The code structure is inspired by this [Wav2Lip](https://github.com/Rudrabha/Wav2Lip). We thank the author for this wonderful code. The code for Face Detection has been taken from the [face_alignment](https://github.com/1adrianb/face-alignment) repository. We thank the authors for releasing their code and models.
+The code structure is inspired by [Wav2Lip](https://github.com/Rudrabha/Wav2Lip) and [emotalkingface](https://github.com/eeskimez/emotalkingface). We thank the authors for the wonderful code. The code for Face Detection has been taken from the [face_alignment](https://github.com/1adrianb/face-alignment) repository. We thank the authors for releasing their code and models.
