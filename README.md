@@ -23,15 +23,15 @@ Prerequisites
 Preparing the CREMA-D dataset for training
 ----------
 
-##### Download data
+#### Download data
 Download the data from this [repo](https://github.com/CheyneyComputerScience/CREMA-D).
 
-##### Convert videos to 25 fps
+#### Convert videos to 25 fps
 ```bash
 python convertFPS.py -i <raw_video_folder> -o <folder_to_save_25fps_videos>
 ```
 
-##### Preprocess the dataset
+#### Preprocess the dataset
 ```bash
 python preprocess_crema-d.py --data_root <folder_of_25fps_videos> --preprocessed_root preprocessed_dataset/
 ```
@@ -40,16 +40,16 @@ Train!
 ----------
 There are three major steps: (i) Train the expert lip-sync discriminator, (ii) Train the emotion discriminator (iii) Train the EmoGen model.
 
-##### Training the expert discriminator
+#### Training the expert discriminator
 ```bash
 python color_syncnet_train.py --data_root preprocessed_dataset/ --checkpoint_dir <folder_to_save_checkpoints>
 ```
-##### Training the emotion discriminator
+#### Training the emotion discriminator
 ```bash
 python emotion_disc_train.py -i preprocessed_dataset/ -o <folder_to_save_checkpoints>
 ```
 
-##### Training the main model
+#### Training the main model
 ```bash
 python train.py --data_root preprocessed_dataset/ --checkpoint_dir <folder_to_save_checkpoints> --syncnet_checkpoint_path <path_to_expert_disc_checkpoint> --emotion_disc_path <path_to_emotion_disc_checkpoint>
 ```
