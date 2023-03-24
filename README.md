@@ -64,6 +64,11 @@ python inference.py --checkpoint_path <ckpt> --face <video.mp4> --audio <an-audi
 ```
 The result is saved (by default) in `results/{emotion}.mp4`. You can specify it as an argument,  similar to several other available options. The audio source can be any file supported by `FFMPEG` containing audio data: `*.wav`, `*.mp3` or even a video file, from which the code will automatically extract the audio. Choose categorical emotion from this list: [HAP, SAD, FEA, ANG, DIS, NEU].
 
+#### Tips for better results:
+- Experiment with the `--pads` argument to adjust the detected face bounding box. Often leads to improved results. You might need to increase the bottom padding to include the chin region. E.g. `--pads 0 20 0 0`.
+- If you see the mouth position dislocated or some weird artifacts such as two mouths, then it can be because of over-smoothing the face detections. Use the `--nosmooth` argument and give another try. 
+- Experiment with the `--resize_factor` argument, to get a lower resolution video. Why? The models are trained on faces which were at a lower resolution. You might get better, visually pleasing results for 720p videos than for 1080p videos (in many cases, the latter works well too). 
+
 Evaluation
 ----------
 Please check the `evaluation/` folder for the instructions.
