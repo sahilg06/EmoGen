@@ -1,10 +1,11 @@
 # **Emotionally Enhanced Talking Face Generation**
 
-This code is PyTorch implementation of the paper: _Emotionally Enhanced Talking Face Generation_
+This repository is the official PyTorch implementation of our paper: _Emotionally Enhanced Talking Face Generation_. We introduce a multimodal framework to generate lipsynced videos agnostic to any arbitrary identity, language, and emotion. Our proposed framework is equipped with a user-friendly [web interface](https://midas.iiitd.edu.in/emo/) with a real-time experience for talking face generation with emotions.
+
 
 |📑 Original Paper|📰 Project Page|🌀 Demo|⚡ Live Testing
 |:-:|:-:|:-:|:-:|
-[Paper](https://arxiv.org/abs/2303.11548) | [Project Page](https://midas.iiitd.edu.in/emo/) | [Demo Video](https://youtu.be/AoWDmrMlhQI) | [Interactive Demo](https://midas.iiitd.edu.in/emo/)
+[Paper](https://arxiv.org/abs/2303.11548) | [Project Page](https://midas.iiitd.edu.in/emo/) | [Demo Video](https://youtu.be/bYPX0zp4MY4) | [Interactive Demo](https://midas.iiitd.edu.in/emo/)
 
 
 ![Model](/images/model.png)
@@ -20,7 +21,17 @@ Prerequisites
 - Install necessary packages using `pip install -r requirements.txt`.
 - Face detection [pre-trained model](https://www.adrianbulat.com/downloads/python-fan/s3fd-619a316812.pth) should be downloaded to `face_detection/detection/sfd/s3fd.pth`. Alternative [link](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/prajwal_k_research_iiit_ac_in/EZsy6qWuivtDnANIG73iHjIBjMSoojcIV0NULXV-yiuiIg?e=qTasa8) if the above does not work.
 
-##### Training the model
+Train!
+----------
+There are two major steps: (i) Train the expert lip-sync discriminator, (ii) Train the emotion discriminator (iii) Train the main model.
+
+##### Training the expert discriminator
+You can download [the pre-trained weights](#getting-the-weights) if you want to skip this step. To train it:
+```bash
+python color_syncnet_train.py --data_root lrs2_preprocessed/ --checkpoint_dir <folder_to_save_checkpoints>
+```
+
+##### Training the main model
 Run: 
 ```bash
 python train.py --data_root preprocessed_dataset/ --checkpoint_dir <folder_to_save_checkpoints> --syncnet_checkpoint_path <path_to_expert_disc_checkpoint> --emotion_disc_path <path_to_emotion_disc_checkpoint>

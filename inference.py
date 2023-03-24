@@ -284,8 +284,8 @@ def main():
 			p = cv2.resize(p.astype(np.uint8), (x2 - x1, y2 - y1))
 
 			f[y1:y2, x1:x2] = p
-			if not cv2.imwrite(f'results/{emo}/'+ str(idx) + '.jpg', f):
-				raise Exception("Could not write image")
+			# if not cv2.imwrite(f'results/{emo}/'+ str(idx) + '.jpg', f):
+			# 	raise Exception("Could not write image")
 			idx = idx + 1
 			out.write(f)
 
