@@ -45,6 +45,9 @@ sh calculate_scores_real_videos.sh /path/to/video/data/root
 # Evaluation of image quality using FID metric.
 We use the [pytorch-fid](https://github.com/mseitzer/pytorch-fid) repository for calculating the FID metrics. We dump all the frames in both ground-truth and generated videos and calculate the FID score. 
 
+# Evaluation of emotion incorporation.
+We use our emotion discriminator to evaluate the generated emotional talking face videos. Train it as an emotion classifier. The higher the emotion classification accuracy (EmoAcc) of the video-based emotion classifier on the generated videos, the better the emotion incorporation ability of the model. As we are using arbitrary emotions to generate our videos, those arbitrary emotions can be exploited as ground truth labels for the classifier to evaluate our model.
+
 
 # Opening issues related to evaluation scripts
 * Please open the issues with the "Evaluation" label if you face any issues in the evaluation scripts. 
