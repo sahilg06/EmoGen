@@ -4,6 +4,8 @@ This repository is the official PyTorch implementation of our paper: _Emotionall
 
 ![Model](/images/model.png)
 
+
+
 |📑 Original Paper|📰 Project Page|🌀 Demo|⚡ Live Testing
 |:-:|:-:|:-:|:-:|
 [Paper](https://arxiv.org/abs/2303.11548) | [Project Page](https://midas.iiitd.edu.in/emo/) | [Demo Video](https://youtu.be/bYPX0zp4MY4) | [Interactive Demo](https://midas.iiitd.edu.in/emo/)
@@ -32,7 +34,6 @@ python emotion_disc_train.py -i preprocessed_dataset/ -o <folder_to_save_checkpo
 ```
 
 ##### Training the main model
-Run: 
 ```bash
 python train.py --data_root preprocessed_dataset/ --checkpoint_dir <folder_to_save_checkpoints> --syncnet_checkpoint_path <path_to_expert_disc_checkpoint> --emotion_disc_path <path_to_emotion_disc_checkpoint>
 ```
