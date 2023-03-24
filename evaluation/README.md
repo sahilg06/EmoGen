@@ -51,7 +51,7 @@ We use our emotion discriminator to evaluate the generated emotional talking fac
 
 
 ## Opening issues related to evaluation scripts
-* Please open the issues with the "Evaluation" label if you face any issues in the evaluation scripts. 
+Please open the issues with the "Evaluation" label if you face any issues in the evaluation scripts. 
 
 ## Acknowledgements
 Our evaluation pipeline in based on two existing repositories. LSE metrics are based on the [syncnet_python](https://github.com/joonson/syncnet_python) repository and the FID score is based on [pytorch-fid](https://github.com/mseitzer/pytorch-fid) repository. We thank the authors of both the repositories for releasing their wonderful code.
