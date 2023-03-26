@@ -530,12 +530,12 @@ if __name__ == "__main__":
     # Model
     model = Wav2Lip().to(device)
     
-    # will use the pretrained model for face_encoder_blocks
-    pretrain_sd = torch.load('/home/mansi/sg_deepfakes/Wav2Lip/checkpoints/emo-baseline/exp11/checkpoint_step000530000.pth')
-    pretrain_sd_face = {k:v for k,v in pretrain_sd['state_dict'].items() if k.split('.')[0]=='face_encoder_blocks'}
-    model_sd = model.state_dict()
-    model_sd.update(pretrain_sd_face)
-    model.load_state_dict(model_sd)
+    ########## will use the pretrained model for face_encoder_blocks
+    # pretrain_sd = torch.load('path')
+    # pretrain_sd_face = {k:v for k,v in pretrain_sd['state_dict'].items() if k.split('.')[0]=='face_encoder_blocks'}
+    # model_sd = model.state_dict()
+    # model_sd.update(pretrain_sd_face)
+    # model.load_state_dict(model_sd)
     # freezeNet(model.face_encoder_blocks)
 
     # model = nn.DataParallel(model, device_ids)
