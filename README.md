@@ -89,4 +89,4 @@ Theis repository can only be used for personal/research/non-commercial purposes.
 
 Acknowledgements
 ----------
-The code structure is inspired by [Wav2Lip](https://github.com/Rudrabha/Wav2Lip). We thank the authors for the wonderful code. The code for Face Detection has been taken from the [face_alignment](https://github.com/1adrianb/face-alignment) repository. We thank the authors for releasing their code and models. Demo website is developed by @ddhroov10 and @SakshatMali.
+The code structure is inspired by [Wav2Lip](https://github.com/Rudrabha/Wav2Lip). We thank the authors for the wonderful code. The code for Face Detection has been taken from the [face_alignment](https://github.com/1adrianb/face-alignment) repository. We thank the authors for releasing their code and models. Demo website is developed by [@ddhroov10](https://github.com/ddhroov10) and [@SakshatMali](https://github.com/SakshatMali).
