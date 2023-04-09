@@ -115,7 +115,7 @@ class Wav2Lip(nn.Module):
 
         audio_embedding = self.audio_encoder(audio_sequences) # B*T, 512, 1, 1
         emotion_embedding = self.emotion_encoder(emotion)
-        ee_needed =  torch.mean(emotion_embedding,0).unsqueeze(0)
+        # ee_needed =  torch.mean(emotion_embedding,0).unsqueeze(0)
         
         emotion_embedding = emotion_embedding.view(-1,512,1,1) # B*T, 512, 1, 1
 
@@ -147,7 +147,7 @@ class Wav2Lip(nn.Module):
         else:
             outputs = x
         
-        return outputs,ee_needed
+        return outputs
 
 
 class Wav2Lip_disc_qual(nn.Module):
