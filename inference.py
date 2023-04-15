@@ -274,7 +274,7 @@ def main():
 		emotion = emotion_.unsqueeze(0).repeat(img_batch.shape[0], 1)
 
 		with torch.no_grad():
-			pred,_ = model(mel_batch, img_batch, emotion)
+			pred = model(mel_batch, img_batch, emotion)
 
 		pred = pred.cpu().numpy().transpose(0, 2, 3, 1) * 255.
 		
