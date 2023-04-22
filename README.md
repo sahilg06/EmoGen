@@ -64,8 +64,8 @@ You can also set additional less commonly-used hyper-parameters at the bottom of
 
 Inference
 -------
-#### Model Weights
-<!-- | Model description| Link to the model |
+<!-- #### Model Weights
+| Model description| Link to the model |
 | :-------------: | :---------------: |
 | Emogen (PL+DA) | [Link](https://drive.google.com/file/d/1yNytUV2qI9RRbB_NMPy-Hgo4b0a-d76F/view?usp=sharing) |
 | Emogen (PRE) | [Link](https://drive.google.com/file/d/1Z_J4xJmlyjue8Th8bl95cC60kOD4sZlZ/view?usp=sharing) | -->
