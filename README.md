@@ -1,5 +1,8 @@
 # **Emotionally Enhanced Talking Face Generation**
 
+https://user-images.githubusercontent.com/59660566/233765056-a83e4a22-adf7-4e85-93ff-86c2196981b4.mp4
+
+
 This repository is the official PyTorch implementation of our paper: _Emotionally Enhanced Talking Face Generation_. We introduce a multimodal framework to generate lipsynced videos agnostic to any arbitrary identity, language, and emotion. Our proposed framework is equipped with a user-friendly [web interface](https://midas.iiitd.edu.in/emo/) with a real-time experience for talking face generation with emotions.
 
 ![Model](/images/model.png)
