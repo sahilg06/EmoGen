@@ -1,5 +1,7 @@
 # **Emotionally Enhanced Talking Face Generation**
 
+[![GitHub Stars](https://img.shields.io/github/stars/sahilg06/EmoGen)](https://github.com/sahilg06/EmoGen)  ![visitors](https://visitor-badge.glitch.me/badge?page_id=sahilg06/EmoGen)
+
 
 
 
