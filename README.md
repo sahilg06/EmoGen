@@ -90,7 +90,7 @@ Please check the `evaluation/` folder for the instructions.
 
 License and Citation
 ----------
-Theis repository can only be used for personal/research/non-commercial purposes. Please cite the following paper if you use this repository:
+This repository can only be used for personal/research/non-commercial purposes. Please cite the following paper if you use this repository:
 ```
 @misc{goyal2023emotionally,
       title={Emotionally Enhanced Talking Face Generation}, 
