@@ -64,6 +64,8 @@ python train.py --data_root preprocessed_dataset/ --checkpoint_dir <folder_to_sa
 ```
 You can also set additional less commonly-used hyper-parameters at the bottom of the `hparams.py` file.
 
+Note: For simplification in the code, we have used ```torch.utils.data.random_split``` in the training scripts to split the CREMA-D dataset into training and testing sets. There is no official train-test split of CREMA-D. Ideally, you should follow [this](https://github.com/CheyneyComputerScience/CREMA-D/issues/2#issuecomment-515081704) evaluation protocol for splitting.
+
 Inference
 -------
 <!-- #### Model Weights
