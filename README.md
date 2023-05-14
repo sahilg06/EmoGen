@@ -19,6 +19,8 @@ This repository is the official PyTorch implementation of our paper: _Emotionall
 |:-:|:-:|:-:|:-:|
 [Paper](https://arxiv.org/abs/2303.11548) | [Project Page](https://midas.iiitd.edu.in/emo/) | [Demo Video](https://youtu.be/bYPX0zp4MY4) | [Interactive Demo](https://midas.iiitd.edu.in/emo/)
 
+Note: Currently, our web-interface utilizes CPU for generating results. 
+
 **Disclaimer**
 --------
 All results from this open-source code or our [demo website](https://midas.iiitd.edu.in/emo/) should only be used for research/academic/personal purposes only. 
