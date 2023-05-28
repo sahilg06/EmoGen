@@ -1,8 +1,7 @@
 # **Emotionally Enhanced Talking Face Generation**
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/emotionally-enhanced-talking-face-generation/talking-face-generation-on-crema-d)](https://paperswithcode.com/sota/talking-face-generation-on-crema-d?p=emotionally-enhanced-talking-face-generation)
-[![GitHub Stars](https://img.shields.io/github/stars/sahilg06/EmoGen)](https://github.com/sahilg06/EmoGen)  ![visitors](https://visitor-badge.glitch.me/badge?page_id=sahilg06/EmoGen)
-
+[![GitHub Stars](https://img.shields.io/github/stars/sahilg06/EmoGen)](https://github.com/sahilg06/EmoGen)
 
 
 
