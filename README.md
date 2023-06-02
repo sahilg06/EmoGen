@@ -91,8 +91,8 @@ The result is saved (by default) in `results/{emotion}.mp4`. You can specify it 
 Evaluation
 ----------
 Please check the `evaluation/` folder for the instructions.
-
-License and Citation
+ 
+Citation
 ----------
 This repository can only be used for personal/research/non-commercial purposes. Please cite the following paper if you use this repository:
 ```
@@ -105,6 +105,11 @@ This repository can only be used for personal/research/non-commercial purposes. 
       primaryClass={cs.CV}
 }
 ```
+
+License
+----------
+Copyright (c) 2023 Sahil Goyal, Shagun Uppal, Sarthak Bhagat, Yi Yu, Yifang Yin, Rajiv Ratn Shah
+For license information, see license.
 
 Acknowledgements
 ----------
