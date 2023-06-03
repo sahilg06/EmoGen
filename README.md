@@ -91,15 +91,21 @@ The result is saved (by default) in `results/{emotion}.mp4`. You can specify it 
 Evaluation
 ----------
 Please check the `evaluation/` folder for the instructions.
- 
+
+Future Plans
+----------
+- [ ] Train the model on [MEAD](https://wywu.github.io/projects/MEAD/MEAD.html) dataset.
+- [ ] Develop a metric to evaluate the video quality in case of emotion incorporation.
+- [ ] Improve the demo website based on user study in the paper.
+
 Citation
 ----------
-This repository can only be used for personal/research/non-commercial purposes. Please cite the following paper if you use this repository:
+This repository can only be used for personal/research/non-commercial purposes. Please cite thvee following paper if you use this repository:
 ```
 @misc{goyal2023emotionally,
       title={Emotionally Enhanced Talking Face Generation}, 
       author={Sahil Goyal and Shagun Uppal and Sarthak Bhagat and Yi Yu and Yifang Yin and Rajiv Ratn Shah},
-      year={2023},
+      year={2023},si
       eprint={2303.11548},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
