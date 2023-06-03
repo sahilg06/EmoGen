@@ -100,12 +100,12 @@ Future Plans
 
 Citation
 ----------
-This repository can only be used for personal/research/non-commercial purposes. Please cite thvee following paper if you use this repository:
+This repository can only be used for personal/research/non-commercial purposes. Please cite the following paper if you use this repository:
 ```
 @misc{goyal2023emotionally,
       title={Emotionally Enhanced Talking Face Generation}, 
       author={Sahil Goyal and Shagun Uppal and Sarthak Bhagat and Yi Yu and Yifang Yin and Rajiv Ratn Shah},
-      year={2023},si
+      year={2023},
       eprint={2303.11548},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
