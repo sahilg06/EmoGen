@@ -70,23 +70,18 @@ Note: For simplification in the code, we have used ```torch.utils.data.random_sp
 
 Inference
 -------
-<!-- #### Model Weights
-| Model description| Link to the model |
-| :-------------: | :---------------: |
-| Emogen (PL+DA) | [Link](https://drive.google.com/file/d/1yNytUV2qI9RRbB_NMPy-Hgo4b0a-d76F/view?usp=sharing) |
-| Emogen (PRE) | [Link](https://drive.google.com/file/d/1Z_J4xJmlyjue8Th8bl95cC60kOD4sZlZ/view?usp=sharing) | -->
 
 Comment these code lines for inference: [line1](https://github.com/sahilg06/EmoGen/blob/7e58e8343dc0faff2685302920750cb8f7227651/models/wav2lip.py#L108) and [line2](https://github.com/sahilg06/EmoGen/blob/7e58e8343dc0faff2685302920750cb8f7227651/models/wav2lip.py#L113). 
 
 ```bash
 python inference.py --checkpoint_path <ckpt> --face <video.mp4> --audio <an-audio-source> --emotion <categorical emotion>
 ```
-The result is saved (by default) in `results/{emotion}.mp4`. You can specify it as an argument,  similar to several other available options. The audio source can be any file supported by `FFMPEG` containing audio data: `*.wav`, `*.mp3` or even a video file, from which the code will automatically extract the audio. Choose categorical emotion from this list: [HAP, SAD, FEA, ANG, DIS, NEU].
+The result is saved (by default) in `results/{emotion}.mp4`. You can specify it as an argument,  similar to several other available options. The audio source can be any file supported by `FFMPEG` containing audio data: `*.wav`, `*.mp3`, or even a video file, from which the code will automatically extract the audio. Choose categorical emotion from this list: [HAP, SAD, FEA, ANG, DIS, NEU].
 
 #### Tips for better results:
-- Experiment with the `--pads` argument to adjust the detected face bounding box. Often leads to improved results. You might need to increase the bottom padding to include the chin region. E.g. `--pads 0 20 0 0`.
-- If you see the mouth position dislocated or some weird artifacts such as two mouths, then it can be because of over-smoothing the face detections. Use the `--nosmooth` argument and give another try. 
-- Experiment with the `--resize_factor` argument, to get a lower resolution video. Why? The models are trained on faces which were at a lower resolution. You might get better, visually pleasing results for 720p videos than for 1080p videos (in many cases, the latter works well too). 
+- Experiment with the `--pads` argument to adjust the detected face bounding box. Often leads to improved results. You might need to increase the bottom padding to include the chin region. E.g., `--pads 0 20 0 0`.
+- If you see the mouth position dislocated or some weird artifacts such as two mouths, then it can be because of over-smoothing the face detections. Use the `--nosmooth` argument and give it another try. 
+- Experiment with the `--resize_factor` argument, to get a lower-resolution video. Why? The models are trained on faces that were at a lower resolution. You might get better, visually pleasing results for 720p videos than for 1080p videos (in many cases, the latter works well too). 
 
 Evaluation
 ----------
@@ -96,7 +91,7 @@ Future Plans
 ----------
 - [ ] Train the model on [MEAD](https://wywu.github.io/projects/MEAD/MEAD.html) dataset.
 - [ ] Develop a metric to evaluate the video quality in case of emotion incorporation.
-- [ ] Improve the demo website based on user study in the paper.
+- [ ] Improve the demo website based on the user study in the paper.
 
 Citation
 ----------
@@ -116,8 +111,8 @@ License
 ----------
 Copyright (c) 2023 Sahil Goyal, Shagun Uppal, Sarthak Bhagat, Yi Yu, Yifang Yin, Rajiv Ratn Shah
 
-For license information, see license.
+For license information, see the license.
 
-Acknowledgements
+Acknowledgments
 ----------
 The code structure is inspired by [Wav2Lip](https://github.com/Rudrabha/Wav2Lip). We thank the authors for the wonderful code. The code for Face Detection has been taken from the [face_alignment](https://github.com/1adrianb/face-alignment) repository. We thank the authors for releasing their code and models. Demo website is developed by [@ddhroov10](https://github.com/ddhroov10) and [@SakshatMali](https://github.com/SakshatMali).
