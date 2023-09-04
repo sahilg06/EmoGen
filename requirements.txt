@@ -1,4 +1,4 @@
-librosa==0.9.0
+librosa==0.9.1
 numba
 numpy
 opencv-python==4.1.1.26
