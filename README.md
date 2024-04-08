@@ -9,7 +9,7 @@ https://user-images.githubusercontent.com/59660566/233766823-a9d55fbf-32e0-4953-
 
 
 
-This repository is the official PyTorch implementation of our paper: _Emotionally Enhanced Talking Face Generation_. We introduce a multimodal framework to generate lipsynced videos agnostic to any arbitrary identity, language, and emotion. Our proposed framework is equipped with a user-friendly [web interface](https://midas.iiitd.edu.in/emo/) with a real-time experience for talking face generation with emotions.
+This repository is the official PyTorch implementation of our paper: _Emotionally Enhanced Talking Face Generation_ accepted at ACM MM 2023, McGE Workshop and ICCV 2023, CVEU Workshop. We introduce a multimodal framework to generate lipsynced videos agnostic to any arbitrary identity, language, and emotion. Our proposed framework is equipped with a user-friendly [web interface](https://midas.iiitd.edu.in/emo/) with a real-time experience for talking face generation with emotions.
 
 ![Model](/images/model.png)
 
@@ -64,7 +64,7 @@ python emotion_disc_train.py -i preprocessed_dataset/ -o <folder_to_save_checkpo
 ```bash
 python train.py --data_root preprocessed_dataset/ --checkpoint_dir <folder_to_save_checkpoints> --syncnet_checkpoint_path <path_to_expert_disc_checkpoint> --emotion_disc_path <path_to_emotion_disc_checkpoint>
 ```
-You can also set additional less commonly-used hyper-parameters at the bottom of the `hparams.py` file.
+You can also set additional less commonly used hyper-parameters at the bottom of the `hparams.py` file.
 
 Note: For simplification in the code, we have used ```torch.utils.data.random_split``` in the training scripts to split the CREMA-D dataset into training and testing sets. There is no official train-test split of CREMA-D. Ideally, you should follow [this](https://github.com/CheyneyComputerScience/CREMA-D/issues/2#issuecomment-515081704) evaluation protocol for splitting.
 
